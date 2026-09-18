@@ -29,7 +29,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 
-	"github.com/bahram-cdt/terraform-provider-openmetadata/internal/provider"
+	"github.com/rsantos1089/terraform-provider-openmetadata/internal/provider"
 )
 
 // testAccProtoV6ProviderFactories is shared by every acceptance test in this

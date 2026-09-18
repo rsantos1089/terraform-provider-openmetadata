@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 
-	"github.com/bahram-cdt/terraform-provider-openmetadata/internal/client"
+	"github.com/rsantos1089/terraform-provider-openmetadata/internal/client"
 )
 
 var _ resource.Resource = &DomainResource{}

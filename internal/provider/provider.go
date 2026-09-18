@@ -7,8 +7,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/bahram-cdt/terraform-provider-openmetadata/internal/client"
-	"github.com/bahram-cdt/terraform-provider-openmetadata/internal/resources"
+	"github.com/rsantos1089/terraform-provider-openmetadata/internal/client"
+	"github.com/rsantos1089/terraform-provider-openmetadata/internal/resources"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"

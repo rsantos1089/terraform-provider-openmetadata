@@ -9,7 +9,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/bahram-cdt/terraform-provider-openmetadata/internal/provider"
+	"github.com/rsantos1089/terraform-provider-openmetadata/internal/provider"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 )
 
