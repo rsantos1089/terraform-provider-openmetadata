@@ -121,7 +121,9 @@ func (r *TeamResource) Create(ctx context.Context, req resource.CreateRequest, r
 		return
 	}
 
+	plannedParents, plannedPolicies := plan.Parents, plan.Policies
 	r.readIntoState(ctx, raw, &plan, resp)
+	plan.Parents, plan.Policies = plannedParents, plannedPolicies
 	resp.Diagnostics.Append(resp.State.Set(ctx, &plan)...)
 }
 
@@ -161,7 +163,9 @@ func (r *TeamResource) Update(ctx context.Context, req resource.UpdateRequest, r
 		return
 	}
 
+	plannedParents, plannedPolicies := plan.Parents, plan.Policies
 	r.readIntoState(ctx, raw, &plan, resp)
+	plan.Parents, plan.Policies = plannedParents, plannedPolicies
 	resp.Diagnostics.Append(resp.State.Set(ctx, &plan)...)
 }
 
