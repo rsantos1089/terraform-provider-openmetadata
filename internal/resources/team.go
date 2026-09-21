@@ -271,7 +271,8 @@ func (r *TeamResource) readIntoState(ctx context.Context, raw []byte, state *Tea
 	// provided by the user are sent on create/update but not reflected back.
 	// For import, parents is excluded via ImportStateVerifyIgnore.
 	state.Parents = types.ListNull(types.StringType)
-	state.Policies = StringListVal(data, "policies")
+	//state.Policies = StringListVal(data, "policies")
+	state.Policies = types.ListNull(types.StringType)
 	state.Domains = StringListVal(data, "domains")
 	state.Owners = OwnersListNull()
 }
